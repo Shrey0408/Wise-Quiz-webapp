@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/wise-quiz-logo.png" type="image/x-icon">
+  <script src = "js/config.js"></script>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: "Comic Sans MS", "Comic Sans", "cursive";
+    }
+  </style>
+  <title>Wise Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body style="background-color:rgb(223, 250, 255)">
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="quiz.html">
+      <img class="mx-2 d-inline-block align-left" src="images/wise-quiz-logo.png" width="60" height="60">
+      Wise Quiz</a>
+    <div class="nav-item mx-2 mb-2">
+      <li class="nav-item dropdown">
+        <a class="nav-link navbar-toggler" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <div class="dropdown-item" id="editProfileBtn">Edit Profile</div>
+          <div class="dropdown-item" id="logoutBtn">Logout</div>
+        </div>
+    </div>
+  </nav>
+  <br><br><br><br><br><br><br><br>
+  <div class="container-fluid mx-4 my-4">
+    <h1 class="display-4" id="result">
+    </h1>
+  </div>
+
+  <script src="js/logoutAndEditprofile.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src = "js/checkRoles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
