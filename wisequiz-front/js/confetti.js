@@ -1,3 +1,4 @@
+
 //
 //
 // Downloaded from https://www.cssscript.com/confetti-falling-animation/
@@ -10,8 +11,8 @@ var startConfetti; //call to start confetti animation
 var stopConfetti; //call to stop adding confetti
 var toggleConfetti; //call to start or stop the confetti animation depending on whether it's already running
 var removeConfetti; //call to stop the confetti animation and remove all confetti immediately
-
-(function() {
+var canvas;
+(function () {
 	startConfetti = startConfettiInner;
 	stopConfetti = stopConfettiInner;
 	toggleConfetti = toggleConfettiInner;
@@ -21,7 +22,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 	var animationTimer = null;
 	var particles = [];
 	var waveAngle = 0;
-	
+
 	function resetParticle(particle, width, height) {
 		particle.color = colors[(Math.random() * colors.length) | 0];
 		particle.x = Math.random() * width;
@@ -36,7 +37,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 	function startConfettiInner() {
 		var width = window.innerWidth;
 		var height = window.innerHeight;
-		window.requestAnimFrame = (function() {
+		window.requestAnimFrame = (function () {
 			return window.requestAnimationFrame ||
 				window.webkitRequestAnimationFrame ||
 				window.mozRequestAnimationFrame ||
@@ -46,17 +47,19 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 					return window.setTimeout(callback, 16.6666667);
 				};
 		})();
-		var canvas = document.getElementById("confetti-canvas");
+		canvas = document.getElementById("confetti-canvas");
 		if (canvas === null) {
 			canvas = document.createElement("canvas");
 			canvas.setAttribute("id", "confetti-canvas");
 			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none");
 			document.body.appendChild(canvas);
+
 			canvas.width = width;
-			canvas.height = height;
-			window.addEventListener("resize", function() {
+			canvas.height = height / 2.5;
+			window.addEventListener("resize", function () {
+
 				canvas.width = window.innerWidth;
-				canvas.height = window.innerHeight;
+				canvas.height = window.innerHeight / 2.5;
 			}, true);
 		}
 		var context = canvas.getContext("2d");
@@ -79,6 +82,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 
 	function stopConfettiInner() {
 		streamingConfetti = false;
+		document.body.innerHTML += `<button class="btn btn-outline-success mx-auto d-block mr-5 pr-5" onclick="window.location.href='quiz.html'" id="back" type="submit">Back</button>`;
 	}
 
 	function removeConfettiInner() {
@@ -143,10 +147,21 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 var url = document.URL;
 var result = url.split("=")[1];
 var resultText = sessionStorage.getItem("resultText");
-if(result == "pass"){
+resultElement = document.createElement("div");
+resultElement.setAttribute("class", "container-fluid mx-4 my-4");
+console.log("sad1");
+if (result == "pass") {
+	resultElement.innerHTML = `<h1 class="display-4" id="result">
+    Pass : Congratulations! You scored ${resultText}</h1>`;
+	console.log(canvas);
+} else if (result == "fail") {
+	resultElement.innerHTML = `<h1 class="display-4" id="result">Fail : You scored ${resultText}</h1>`;
+
+}
+document.body.appendChild(resultElement);
+if (result == "pass") {
 	startConfetti();
-	setTimeout(stopConfetti,4000);
-	document.getElementById("result").innerText = "Pass : Congratulations! You scored "+resultText;
-}else if(result == "fail"){
-	document.getElementById("result").innerText = "Fail : You scored "+resultText;
+	setTimeout(stopConfetti, 3000);
+} else if (result == "fail") {
+	document.body.innerHTML += `<br><br><br><br><br><br><br><br><br><button class="btn btn-outline-success mx-auto d-block mr-5 pr-5" onclick="window.location.href='quiz.html'" id="back" type="submit">Back</button>`;
 }
