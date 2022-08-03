@@ -28,7 +28,7 @@ On Fail following message will be shown.
 
 <img width="1278" alt="image" src="https://user-images.githubusercontent.com/53952338/182581139-4cca3b16-c8e2-41d2-8609-9d592dfd694c.png">
 
-# Users with Admin acess
+# Users with Admin role
 
 Along with above given features. Users with admin role will be having additional Admin features.
 
@@ -43,6 +43,10 @@ Admin page with options to Grant Admin role to other users, Create new quiz and 
 Click on "Grant Admin Role" button to open the page for adding Admin role to other users. Enter the username of the user for whom we want to add Admin role. Click on "Add Admin Role" to add the Admin role.
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/53952338/182589352-12de9865-217c-4931-a2fd-585b6dbc2cdb.png">
+
+To create new Quiz click on "Create New Quiz" button in Admin page. Fill the Quiz Name and category of Quiz to create the new Quiz.
+
+<img width="403" alt="image" src="https://user-images.githubusercontent.com/53952338/182593105-94a20ae3-c381-46a9-9d20-56bb920f62e7.png">
 
 
 
