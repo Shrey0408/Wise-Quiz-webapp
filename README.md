@@ -1,5 +1,7 @@
 # Wise-Quiz-webapp
 
+Live Link : http://wisequiz-front.s3-website-us-east-1.amazonaws.com/login.html
+
 • A full-stack quiz webapp developed using SpringBoot and Vanilla Javascript.
 • Users can attempt and evaluate themselves on quizzes across various categories.
 • Users with admin role can perform all CRUD operations to modify existing quizzes or add new quiz.
