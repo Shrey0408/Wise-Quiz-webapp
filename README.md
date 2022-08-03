@@ -36,9 +36,14 @@ In the home page users with Admin Role will be having additional button to open 
 
 ![image](https://user-images.githubusercontent.com/53952338/182586004-5e680f20-43a1-4c86-963e-619eae968367.png)
 
-Admin page with options to Grant Admin role to other users, Create new role and to Update/Delete existing Quiz.
+Admin page with options to Grant Admin role to other users, Create new quiz and to Update/Delete existing Quiz.
 
 <img width="1277" alt="image" src="https://user-images.githubusercontent.com/53952338/182588278-951d37ca-b33f-44c8-8f7e-aa50339fd94f.png">
+
+Click on "Grant Admin Role" button to open the page for adding Admin role to other users. Enter the username of the user for whom we want to add Admin role. Click on 
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/53952338/182589352-12de9865-217c-4931-a2fd-585b6dbc2cdb.png">
+
 
 
 
