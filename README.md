@@ -6,6 +6,7 @@
 • Used JWT for user Authentication and Authorization.
 • Tech used : JAVA, SPRINGBOOT, MYSQL, JAVASCRIPT, HTML/CSS, BOOTSTRAP, AWS
 
+# Details of Quiz App
 # User with default access role : 
 
 On logging in users will be able to see all the available quizes across various category.
@@ -47,6 +48,9 @@ Click on "Grant Admin Role" button to open the page for adding Admin role to oth
 To create new Quiz click on "Create New Quiz" button in Admin page. Fill the Quiz Name and category of Quiz to create the new Quiz.
 
 <img width="403" alt="image" src="https://user-images.githubusercontent.com/53952338/182593105-94a20ae3-c381-46a9-9d20-56bb920f62e7.png">
+
+To Update /Delete existing Quiz or to add Questions to new Quiz click on "Update/Delete existing Quiz" button. List of all the existing quiz will show up on screen.
+
 
 
 
