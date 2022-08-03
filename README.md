@@ -51,6 +51,10 @@ To create new Quiz click on "Create New Quiz" button in Admin page. Fill the Qui
 
 To Update /Delete existing Quiz or to add Questions to new Quiz click on "Update/Delete existing Quiz" button. List of all the existing quiz will show up on screen.
 
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/53952338/182594322-2036fd41-4495-4b7a-b974-7ea146525492.png">
+
+
+
 
 
 
