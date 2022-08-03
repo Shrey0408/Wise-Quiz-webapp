@@ -22,4 +22,27 @@ To Eavluate your answers click on Evaluate button. Or click on back to go back t
 
 On passing the quiz Congratulations message with score will show up.
 
+![image](https://user-images.githubusercontent.com/53952338/182580645-ae842a4e-9785-48a9-977c-61a0a332351b.png)
+
+On Fail following message will be shown.
+
+<img width="1278" alt="image" src="https://user-images.githubusercontent.com/53952338/182581139-4cca3b16-c8e2-41d2-8609-9d592dfd694c.png">
+
+# Users with Admin acess
+
+Along with above given features. Users with admin role will be having additional Admin features.
+
+In the home page users with Admin Role will be having additional button to open Admin.
+
+![image](https://user-images.githubusercontent.com/53952338/182586004-5e680f20-43a1-4c86-963e-619eae968367.png)
+
+Admin page with options to Grant Admin role to other users, Create new role and to Update/Delete existing Quiz.
+
+<img width="1277" alt="image" src="https://user-images.githubusercontent.com/53952338/182588278-951d37ca-b33f-44c8-8f7e-aa50339fd94f.png">
+
+
+
+
+
+
 
